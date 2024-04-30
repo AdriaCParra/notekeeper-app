@@ -1,7 +1,5 @@
 import "./App.css";
 
-function App() {
-  return <h1>{import.meta.env.VITE_API_BASE_URL}</h1>;
-}
+function App() {}
 
 export default App;
