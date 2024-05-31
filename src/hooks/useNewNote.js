@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { serviceNote } from "../services";
-import { validateNote } from "../helpers/validation";
 
 export const useNewNote = () => {
   const [newNote, setNewNote] = useState({
