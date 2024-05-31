@@ -1,0 +1,77 @@
+.notesForm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 20%;
+}
+
+.notesForm-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.notesForm-container button {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.notesForm-container button:hover {
+  background-color: #555;
+}
+
+.status-important {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.important {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#important {
+  appearance: none;
+  background-color: #333;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid #555;
+  position: relative;
+}
+
+#important:checked::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 2px;
+  left: 7px;
+}
+
+#important:checked::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 2px;
+  left: 7px;
+}
+
+#important:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #555;
+}
